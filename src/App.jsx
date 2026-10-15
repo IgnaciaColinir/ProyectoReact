@@ -38,6 +38,8 @@ import OilReflection from "./assets/haircare/oilreflection/Principal.jpg";
 import SunProtection from "./assets/suncare/sunprotection/Principal.jpg";
 import Anthelios from "./assets/suncare/anthelios/Principal.jpg";
 import VitaminaC from "./assets/suncare/vitaminac/Principal.jpg";
+
+/* Login -Register -Contact */
 import Login from "./pages/login/Login";
 import Register from "./pages/register/Register";
 import Contact from "./pages/contact/Contact";
