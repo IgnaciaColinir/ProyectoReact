@@ -5,28 +5,28 @@ import { HomePage } from './pages/HomePage';
 import { ShopPage } from './pages/ShopPage';  
 
 /* Categorías y Destacados principales */
-import RealHyaluron from './assets/skincare/RealHyaluron/Principal.webp';
-import LacticAcid from './assets/skincare/LacticAcid/Principal.jpg';
+import RealHyaluron from './assets/skincare/realhyaluron/Principal.webp';
+import LacticAcid from './assets/skincare/lacticacid/Principal.jpg';
 import pdrnSerum from './assets/skincare/pdrnserum/Principal.jpg';
-import GelMoisturizer from './assets/skincare/GelMoisturizer/Principal.jpg';
-import SkinCT from './assets/skincare/AnuaSerum/Principal.webp';
+import GelMoisturizer from './assets/skincare/gelmoisturizer/Principal.jpg';
+import SkinCT from './assets/skincare/anuaserum/Principal.webp';
 import MakeUpCT from './assets/makeup/Categoria.jpg';
 import HairCareCT from './assets/haircare/Categoria.jpg';
 import SunCareCT from './assets/suncare/Categoria.jpg';
 
 /* Productos - Skin Care */
-import GlowSerum from './assets/skincare/SerumForRadiant/Principal.webp';
-import Moisturizer from './assets/skincare/Moisturizer/Principal.webp';
-import RealComplexion from './assets/skincare/RealComplexionHyaluron/Principal.webp';
-import SetStep from './assets/skincare/Set3-Step/Principal.webp';
+import GlowSerum from './assets/skincare/serumforradiant/Principal.webp';
+import Moisturizer from './assets/skincare/moisturizer/Principal.webp';
+import RealComplexion from './assets/skincare/realcomplexionhyaluron/Principal.webp';
+import SetStep from './assets/skincare/set3-step/Principal.webp';
 
 /* Productos - Make up */
-import MultiStick from './assets/makeup/Multi-Stick/Principal.jpg';
-import MatteLips from './assets/makeup/MatteLips/Principal.jpg';
-import BroncePowder from './assets/makeup/BroncePowder/Principal.jpg';
-import GlowPlay from './assets/makeup/GlowPlay/Principal.jpg';
-import HighLigth from './assets/makeup/HigthLight/Principal.jpg';
-import PowderKiss from './assets/makeup/PowderKiss/Principal.jpg';
+import MultiStick from './assets/makeup/multistick/Principal.jpg';
+import MatteLips from './assets/makeup/mattelips/Principal.jpg';
+import BroncePowder from './assets/makeup/broncepowder/Principal.jpg';
+import GlowPlay from './assets/makeup/glowplay/Principal.jpg';
+import HighLigth from './assets/makeup/higthlight/Principal.jpg';
+import PowderKiss from './assets/makeup/powderkiss/Principal.jpg';
 
 /* Productos - Hair Care */
 import KitWella from './assets/haircare/kitwella/Principal.jpg';
@@ -35,9 +35,9 @@ import ColorMotion from './assets/haircare/colormotion/Principal.jpg';
 import OilReflection from './assets/haircare/oilreflection/Principal.jpg';
 
 /* Productos - Sun Care */
-import SunProtection from './assets/suncare/SunProtection/Principal.jpg';
-import Anthelios from './assets/suncare/Anthelios/Principal.jpg';
-import VitaminaC from './assets/suncare/VitaminaC/Principal.jpg';
+import SunProtection from './assets/suncare/sunprotection/Principal.jpg';
+import Anthelios from './assets/suncare/anthelios/Principal.jpg';
+import VitaminaC from './assets/suncare/vitaminac/Principal.jpg';
 
 function App() {
   const mockProductos = [
