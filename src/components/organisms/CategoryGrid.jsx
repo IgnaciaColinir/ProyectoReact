@@ -1,19 +1,30 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
-
-export const CategoryGrid = ({categorias}) => {
+export const CategoryGrid = ({ categorias = [] }) => {
+  const navigate = useNavigate();
   const listaCategorias = Array.isArray(categorias) ? categorias : [];
+
+  const handleCategoryClick = (title) => {
+    const slug = title.toLowerCase().replace(/\s+/g, '-');
+    navigate(`/shop?category=${slug}`);
+  };
+
   return (
-    <section className="category-section">
-      <h2 className="section-title">SHOP BY CATEGORY</h2>
+    <section className="categoriaGrid-section">
+      <h2 className="categoriaGrid-titulo">SHOP BY CATEGORY</h2>
       <hr className="linea-decorativa" />
-      <div className="category-grid">
-        {categorias.map((cat) => (
-          <div key={cat.id} className="category-card">
-            <div className="category-image-wrapper">
+      <div className="caluga-categoria">
+        {listaCategorias.map((cat) => (
+          <div 
+            key={cat.id} 
+            className="tarjeta-categoria"
+            onClick={() => handleCategoryClick(cat.title)}
+          >
+            <div className="imagen-categoria">
               <img src={cat.image} alt={cat.title} />
             </div>
-            <span className="category-title">{cat.title}</span>
+            <span className="categoriaGrid-titulo">{cat.title}</span>
           </div>
         ))}
       </div>

@@ -8,17 +8,17 @@ import AnuncioImg from '../../assets/oferta.jpg';
 
 export const HomeTemplate = ({ productos, categorias }) => {
   return (
-    <div className="home-layout">
+    <div className="principal">
       <Header />
 
-      <section className="hero-section">
-        <div className="hero-content">
-          <span className="hero-subtitle">NEW IN</span>
-          <h1 className="hero-title">
-            RADIANT SKIN.<br />REAL CONFIDENCE
+      <section className="portada-section">
+        <div className="cont-portada">
+          <span className="portada-subtitulo">LO NUEVO EN</span>
+          <h1 className="portada-titulo">
+            PIEL RADIANTE.<br />INFALIBLE
           </h1>
-          <p className="hero-description">
-            Clean beauty that nourishes, enhances and empowers you
+          <p className="portada-descripcion">
+            Belleza limpia que te nutre, realza y empodera.
           </p>
           <Button variant="primary">SHOP NOW</Button>
         </div>

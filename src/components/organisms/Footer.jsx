@@ -4,31 +4,31 @@ import { Button } from '../atoms/Button';
 export const Footer = () => {
   return (
     <>
-      <footer className="footer-services">
-        <div className="services-container">
+      <footer className="footer-servicios">
+        <div className="servicios-container">
           <div className="feature-item">
-            <i class="bi bi-truck"></i>
+            <i className="bi bi-truck"></i>
             <div className="feature-info">
               <h4>FREE SHIPPING</h4>
               <p>On orders over $999</p>
             </div>
           </div>
           <div className="feature-item">
-            <i class="bi bi-arrow-repeat"></i>
+            <i className="bi bi-arrow-repeat"></i>
             <div className="feature-info">
               <h4>EASY RETURN</h4>
               <p>15 days return policy</p>
             </div>
           </div>
           <div className="feature-item">
-            <i class="bi bi-shield-lock"></i>
+            <i className="bi bi-shield-lock"></i>
             <div className="feature-info">
               <h4>SECURE PAYMENT</h4>
               <p>100% secure checkout</p>
             </div>
           </div>
           <div className="feature-item">
-            <i class="bi bi-headset"></i>
+            <i className="bi bi-headset"></i>
             <div className="feature-info">
               <h4>24/7 SUPPORT</h4>
               <p>We here to help</p>

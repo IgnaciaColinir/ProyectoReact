@@ -1,29 +1,32 @@
 import React from 'react';
 import logoImg from '../../assets/logo.jpg';
+import { Link } from 'react-router-dom';
+
+
 export const Header = () => {
   return (
     <header className="header">
       <div className="header-container">
 
-        <div className="brand-logo">
-          <img className="brand-icon" src={logoImg} alt="Velvetique Logo"/>
-          <span className="brand-title">VELVETIQUE</span>
-        </div>
+        <Link to ="/" className="logo">
+          <img className="icono" src={logoImg} alt="Velvetique Logo"/>
+          <span className="header-titulo">VELVETIQUE</span>
+        </Link>
 
         <nav>
-          <ul className="nav-list">
-            <li><a href="#" className="nav-link">HOME</a></li>
-            <li><a href="#" className="nav-link">SHOP</a></li>
-            <li><a href="#" className="nav-link">CONTACT</a></li>
-            <li><a href="#" className="nav-link">SIGN IN</a></li>
+          <ul className="nav-lista">
+            <li><Link to= "/" className="nav-link">HOME</Link></li>
+            <li><Link to= "/shop" className="nav-link">SHOP</Link></li>
+            <li><a href="#contact" className="nav-link">CONTACT</a></li>
+            <li><a href="#signin" className="nav-link">SIGN IN</a></li>
           </ul>
         </nav>
-        <div className="header-actions">
+        <div className="icono">
           <a href="#">
-            <i class="bi bi-person"></i>
+            <i className="bi bi-person"></i>
           </a>
-          <a href="#" class="resaltar">
-          <i class="bi bi-bag"></i>
+          <a href="#" className="icono">
+            <i className="bi bi-bag"></i>
           </a>
         </div>
       </div>

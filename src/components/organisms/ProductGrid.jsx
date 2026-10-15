@@ -1,13 +1,13 @@
 import React from 'react';
 import { ProductCard } from '../molecules/ProductCard';
 
-export const ProductGrid = ({ products = [] }) => {
+export const ProductGrid = ({ productos = [] }) => {
   return (
-    <section className="products-section">
-      <h2 className="section-title">BEST SELLERS</h2>
+    <section className="productosGrid-section">
+      <h2 className="productosGrid-titulo">BEST SELLERS</h2>
       <hr className="linea-decorativa" />
-      <div className="product-grid">
-        {products.map((item) => (
+      <div className="producto-grid">
+        {productos.map((item) => (
           <ProductCard key={item.id} {...item} />
         ))}
       </div>

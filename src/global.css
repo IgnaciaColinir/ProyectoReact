@@ -1,13 +1,11 @@
 /* VARIABLES Y TEMA */
 :root {
-  --color-primary: #C57A88;
   --color-primary-hover: #b06775;
   --color-dark: #4A2031;
   --color-dark-hover: #381724;
   --color-bg-light: #FAF8F5;
   --color-bg-pink: #F4E3E5;
   --color-white: #ffffff;
-  --color-text-main: #2b2b2b;
   --color-text-muted: #6b6b6b;
   --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
   --font-serif: 'Playfair Display', Georgia, serif;
@@ -28,7 +26,7 @@
 body {
   font-family: var(--font-sans);
   background-color: var(--color-bg-light);
-  color: var(--color-text-main);
+  color: #2b2b2b;
   line-height: 1.5;
 }
 
@@ -39,30 +37,49 @@ a {
 
 /* ÁTOMOS */
 .btn {
-  display: inline-block;
-  padding: 10px 24px;
-  font-size: 12px;
-  font-weight: 600;
-  letter-spacing: 1px;
-  text-transform: uppercase;
+  background-color: #c97387;
+  color: white;
   border: none;
-  border-radius: var(--radius-sm);
+  padding: 12px 24px;
+  border-radius: 6px;
   cursor: pointer;
+  font-weight: 700;
   transition: background-color 0.2s ease;
-  text-align: center;
 }
 
 .btn-primary {
-  background-color: var(--color-primary);
-  color: var(--color-white);
+  background-color: #c97387 !important;
+  color: white;
+  border-color: #b06775 !important ;
+ 
 }
 
 .btn-primary:hover {
-  background-color: var(--color-primary-hover);
+   background-color:#b06775 !important;
 }
 
 .btn-full {
   width: 100%;
+}
+
+.btn-secondary {
+  background-color: white !important;
+  color: #9c4156 !important;
+  border-color: #b06775;
+  padding: 12px 28px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 700;
+  margin-top: 10px;
+  transition: all 0.2s ease;
+}
+
+.btn-secondary:hover {
+  background-color: #9e5969 !important;
+  color: white !important;
+  transform: scale(1.05);
+  cursor: pointer;
+  border-color: #b06775;
 }
 
 .input-text {
@@ -74,15 +91,15 @@ a {
   width: 100%;
 }
 
-.brand-logo {
+.logo {
   display: flex;
   align-items: center;
   gap: 12px;
 }
 
-.brand-icon {
-  width: 40px;
-  height: 40px;
+.icono {
+  width: 60px;
+  height: 60px;
   border-radius: var(--radius-full);
   border: 1px solid #e2cbab;
   display: flex;
@@ -90,14 +107,14 @@ a {
   justify-content: center;
 }
 
-.brand-title {
-  font-size: 18px;
+.header-titulo {
+  font-size: 25px;
   font-weight: 700;
   letter-spacing: 2px;
 }
 
 /* MOLÉCULAS */
-.category-card {
+.tarjeta-categoria{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -105,49 +122,57 @@ a {
   cursor: pointer;
 }
 
-.category-image-wrapper {
+.imagen-categoria {
   width: 180px;
   height: 220px;
-  border-radius: var(--radius-full);
+  border-radius: 100%;
   overflow: hidden;
   margin-bottom: 12px;
   box-shadow: var(--shadow-sm);
 }
 
-.category-image-wrapper img {
+.imagen-categoria img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: transform 0.3s ease;
 }
 
-.category-card:hover .category-image-wrapper img {
+.tarjeta-categoria:hover .imagen-categoria img {
   transform: scale(1.05);
 }
 
-.category-title {
+.categoriaGrid-titulo {
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 1px;
 }
 
-.product-card {
-  background: var(--color-white);
-  border-radius: var(--radius-md);
-  padding: 16px;
-  box-shadow: var(--shadow-sm);
+.caluga-producto {
+  width: 220px;
+  /* 1. Muestra la tarjeta con alto adaptable al contenido */
+  height: auto;
+
+  /* 2. Aplica Flexbox para ordenar todo verticalmente */
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
-  transition: box-shadow 0.3s ease;
+  justify-content: space-between;
+
+  /* 3. Espaciado interno para que nada toque los bordes */
+  padding: 20px;
+  gap: 12px; /* Controla la distancia entre imagen, texto y botón */
+
+  /* 4. Mantiene el fondo blanco y las esquinas que se observan en la imagen */
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+
 }
 
-.product-card:hover {
-  box-shadow: var(--shadow-md);
-}
 
-.product-img-container {
+
+.imagen-producto {
   width: 100%;
   height: 180px;
   margin-bottom: 12px;
@@ -156,20 +181,20 @@ a {
   justify-content: center;
 }
 
-.product-img-container img {
+.imagen-producto img {
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
 }
 
-.product-title {
+.producto-titulo {
   font-size: 13px;
   font-weight: 500;
   min-height: 38px;
-  color: var(--color-text-main);
+  color:#2b2b2b;
 }
 
-.product-brand {
+.marca-producto {
   font-size: 11px;
   font-weight: 700;
   color: var(--color-text-muted);
@@ -177,10 +202,10 @@ a {
   text-transform: uppercase;
 }
 
-.product-price {
+.precio-producto {
   font-size: 15px;
   font-weight: 700;
-  color: var(--color-primary);
+  color: #c97387;
   margin-bottom: 12px;
 }
 
@@ -202,11 +227,28 @@ a {
 
 /* ORGANISMOS */
 .header {
-  background-color: var(--color-white);
+  background-color: white;
   border-bottom: 1px solid #f0f0f0;
   position: sticky;
-  top: 0;
+  top: 0px;
   z-index: 100;
+} 
+
+.header a,
+.nav-link,
+.brand-logo {
+  text-decoration: none;
+  color: inherit; 
+  font-size: 20px;
+  letter-spacing: 3px;
+  transition: color 0.2s;
+
+}
+
+.header a:hover,
+.nav-link:hover {
+  text-decoration: none;
+  color: #c97387; /* O el color rosado/principal que uses */
 }
 
 .header-container {
@@ -218,62 +260,86 @@ a {
   justify-content: space-between;
 }
 
-.nav-list {
+.nav-lista {
   display: flex;
   gap: 32px;
   list-style: none;
 }
 
 .nav-link {
-  font-size: 12px;
-  font-weight: 600;
-  letter-spacing: 1px;
-  transition: color 0.2s;
+  margin: 0px 25px 0px;
+
 }
 
 .nav-link:hover {
-  color: var(--color-primary);
+  color: #c97387;
 }
 
-.header-actions {
+.bi {
+  font-size: 1.6rem;
+  vertical-align: middle;
+  margin-right: 6px;
+  color:#9c4156;
+  letter-spacing: 25px;
+}
+
+.bi.bi-person{
+  font-size: 1.9rem;
+}
+
+.icono {
   display: flex;
-  gap: 16px;
+  flex-direction: row;
+  text-decoration: none;
+  color: inherit;        
+  transition: transform 0.2s ease, color 0.2s ease;
+  border-color: white;
 }
 
-.category-section, .products-section {
+.icono:hover {
+  color: #c97387;
+  transform: scale(1.09);
+  cursor: pointer;
+}
+
+
+.categoriaGrid-section, .productosGrid-section {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 24px;
+  padding: 0 auto;
   text-align: center;
 }
 
-.section-title {
-  font-size: 16px;
+.categoriaGrid-titulo, .productosGrid-titulo {
+  font-size: 25px;
   font-weight: 700;
   letter-spacing: 2px;
   margin-bottom: 32px;
   text-transform: uppercase;
+  margin: 20px;
 }
 
-.category-grid {
+.caluga-categoria {
   display: grid;
+  margin: 40px 20px;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 32px;
   justify-items: center;
 }
 
-.product-grid {
+.producto-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 24px;
+  margin: 40px 50px;
+  gap: 10px;
 }
 
-.footer-services {
+.footer-servicios {
   background-color: var(--color-bg-pink);
   padding: 24px;
 }
 
-.services-container {
+.servicios-container {
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
@@ -282,9 +348,10 @@ a {
 }
 
 .footer-main {
-  background-color: var(--color-dark);
-  color: var(--color-white);
+  background-color: var(--color-dark) !important;
+  color: white !important;
   padding: 48px 24px 24px 24px;
+   
 }
 
 .footer-container {
@@ -303,6 +370,7 @@ a {
 
 .footer-col ul {
   list-style: none;
+  
 }
 
 .footer-col ul li {
@@ -317,12 +385,9 @@ a {
   margin-top: 12px;
 }
 
-/* ==========================================================================
-   ESTILOS PARA HOME TEMPLATE Y SECCIONES PRINCIPALES
-   ========================================================================== */
 
 /* Layout Contenedor Principal */
-.home-layout {
+.principal {
   width: 100%;
   min-height: 100vh;
   background-color: var(--color-bg-light);
@@ -330,19 +395,17 @@ a {
   flex-direction: column;
 }
 
-/* --------------------------------------------------------------------------
-   HERO SECTION (Banner Principal con Imagen de Fondo)
-   -------------------------------------------------------------------------- */
-.hero-section {
+/* HERO SECTION */
+.portada-section {
   width: 100%;
   min-height: 520px;
-  background: url('/src/assets/Anuncio.jpg') ;
+  background: url('/src/assets/Anuncio.jpg');
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
   padding: 60px 20px 80px 10%;
   position: relative;
-  display: row;
+  display: flex; /* 👈 Corregido de display: row a display: flex */
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
@@ -351,23 +414,22 @@ a {
   margin-bottom: 60px;
 }
 
-/* Contenido del Hero */
-.hero-content {
+.cont-portada {
   max-width: 300px;
   z-index: 2;
 }
 
-.hero-subtitle {
+.portada-subtitulo {
   font-size: 13px;
   font-weight: 700;
   letter-spacing: 2px;
-  color: var(--color-text-main);
+  color: #2b2b2b;
   text-transform: uppercase;
   display: block;
   margin-bottom: 8px;
 }
 
-.hero-title {
+.portada-titulo {
   font-size: 38px;
   font-weight: 800;
   line-height: 1.15;
@@ -376,15 +438,12 @@ a {
   letter-spacing: 0.5px;
 }
 
-.hero-description {
+.portada-descripcion {
   font-size: 14px;
   color: #4a4a4a;
   margin-bottom: 24px;
   font-weight: 500;
 }
-
-/* -------------------------------------------------------------------------- */
-
 
 .features-banner {
   background: white;
@@ -400,16 +459,9 @@ a {
 
 .features-container {
   width: 100%;
-  margin: 0 0;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
-}
-
-.feature-item {
-  display: flex;
-  align-items: center;
-  gap: 12px;
 }
 
 .feature-icon {
@@ -418,24 +470,11 @@ a {
   object-fit: contain;
 }
 
-.feature-info h4 {
-  font-size: 12px;
-  font-weight: 700;
-  color: var(--color-text-main);
-}
-
-.feature-info p {
-  font-size: 11px;
-  color: var(--color-text-muted);
-}
-
-/* --------------------------------------------------------------------------
-   PROMO BANNER (Banner Intermedio de "Up to 30% Off")
-   -------------------------------------------------------------------------- */
+/* PROMO BANNER */
 .promo-section {
   width: 90%;
   max-width: 1200px;
-  margin: 40px auto;
+  margin: 40px 50px;
   padding: 0 24px;
 }
 
@@ -491,16 +530,82 @@ a {
   height: 100%;
   object-fit: cover;
 }
+
 .linea-decorativa {
-  width: 80px; /* Ancho de la línea */
+  width: 80px;
   border: none;
-  height: 3px; /* Grosor de la línea */
-  background-color: #e8c5c8; /* Color de la línea */
+  height: 3px;
+  background-color: #c37285;
   margin: 0 auto 25px;
 }
-/* --------------------------------------------------------------------------
-   RESPONSIVE (Adaptabilidad Móvil)
-   -------------------------------------------------------------------------- */
+
+/* ESTILOS DE LA PÁGINA SHOP */
+.shop-container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px 40px 80px 20px ;
+  box-sizing: border-box;
+  background: url('/src/assets/Productos.jpg'); ;
+  background-size: cover;                  /* Estira la imagen para cubrir toda la pantalla */
+  background-position: center;             /* Centra la imagen */
+  background-repeat: no-repeat;            /* Evita que se repita como mosaico */
+  background-attachment: fixed;  
+
+}
+.shop-product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  justify-items: center;
+
+}
+
+.shop-main-title {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: #2b2b2b;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.shop-category-section {
+  margin-bottom: 60px;
+}
+
+.category-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.category-header-title {
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  color: #2b2b2b;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.category-header-line {
+  width: 60px;
+  height: 2px;
+  background-color: #c97a8e;
+  border: none;
+  margin: 0 auto;
+}
+
+
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .shop-product-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 @media (max-width: 768px) {
   .hero-section {
     padding: 60px 24px;
@@ -517,9 +622,31 @@ a {
 
   .promo-card {
     flex-direction: column;
+    height: auto;
   }
 
-  .promo-content {
-    padding: 32px 24px;
+  .promo-content,
+  .promo-image {
+    width: 100%;
+    flex: none;
+  }
+
+  .shop-product-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+  
+  .shop-container {
+    padding: 30px 16px;
+  }
+
+  .category-header-title {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .shop-product-grid {
+    grid-template-columns: 1fr;
   }
 }
