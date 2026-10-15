@@ -4,7 +4,7 @@ import { CategoryGrid } from '../organisms/CategoryGrid';
 import { ProductGrid } from '../organisms/ProductGrid';
 import { Footer } from '../organisms/Footer';
 import { Button } from '../atoms/Button';
-import AnuncioImg from '../../assets/oferta.jpg';
+import AnuncioImg from '../../assets/images/oferta.jpg';
 
 export const HomeTemplate = ({ productos, categorias }) => {
   return (
