@@ -539,7 +539,7 @@ a {
   margin: 0 auto;
   padding: 20px 40px 80px 20px;
   box-sizing: border-box;
-  background: url("/src/assets/images/Productos.jpg");
+  background: url("/src/assets/images/productos.jpg");
   background-size: cover; /* Estira la imagen para cubrir toda la pantalla */
   background-position: center; /* Centra la imagen */
   background-repeat: no-repeat; /* Evita que se repita como mosaico */
