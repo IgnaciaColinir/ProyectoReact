@@ -1,5 +1,3 @@
-import React from "react";
-
 export const adminStorage = {
   get(key, fallback) {
     try {
