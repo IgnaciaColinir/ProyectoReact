@@ -36,9 +36,9 @@ export const Header = () => {
           </ul>
         </nav>
         <div className="icono">
-          <a href="#">
+          <Link to="/login" className="icono">
             <i className="bi bi-person"></i>
-          </a>
+          </Link>
           <li>
             <Link to="/carrito" className="icono">
               <i className="bi bi-bag"></i>

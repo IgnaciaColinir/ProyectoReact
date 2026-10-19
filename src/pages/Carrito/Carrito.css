@@ -42,8 +42,8 @@
 
 /* Encabezado Rosado de la tabla */
 .carrito-table thead tr {
-  background-color: #c49a9e; /* Tono rosa viejo / mauve */
-  color: #ffffff;
+  background-color: #c37285; 
+  color: #fefefe;
 }
 
 .carrito-table th {
@@ -51,6 +51,7 @@
   font-size: 15px;
   font-weight: 600;
   text-align: left;
+  color: #eee;
 }
 
 /* Filas del contenido */
@@ -126,9 +127,9 @@
 /* Botón Principal: Finalizar Compra */
 .btn-finalizar {
   padding: 12px 28px;
-  background-color: #c49a9e;
+  background-color: #c37285;
   color: #ffffff;
-  border: 1px solid #b3878b;
+  border: 1px solid #b1697a;
   border-radius: 6px;
   font-size: 15px;
   font-weight: 600;
@@ -137,14 +138,14 @@
 }
 
 .btn-finalizar:hover {
-  background-color: #b3878b;
+  background-color: #ad6777;
   transform: translateY(-1px);
 }
 
 .btn-seguir {
   display: inline-block;
   padding: 12px 28px;
-  background-color: #e5d1d3;
+  background-color: #dfc3ca;
   color: #4a3e40;
   border: 1px solid #d3bcbf;
   border-radius: 6px;

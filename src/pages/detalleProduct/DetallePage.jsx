@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { Header } from '../../components/organisms/Header'; 
 import { Footer } from '../../components/organisms/Footer'; 
-import fondoProductos from '../../assets/images/productos.jpg';
 import './ProductoPage.css';
 
 export const DetallePage = ({ todosLosProductos = [], agregarAlCarrito }) => {
@@ -32,7 +31,7 @@ export const DetallePage = ({ todosLosProductos = [], agregarAlCarrito }) => {
     <div className="home-layout">
       <Header />
 
-      <div className="productoDetalle-container productoDetalle-grid" style={{ backgroundImage: `url(${fondoProductos})` }}>
+      <div className="productoDetalle-container productoDetalle-grid" >
         
         <div className="productoDetalle-imagen-section">
           <div className="productoDetalle-imagen-principal">
@@ -60,6 +59,7 @@ export const DetallePage = ({ todosLosProductos = [], agregarAlCarrito }) => {
           <div className="cantidad-container">
             <label>Cantidad</label>
             <select 
+                className='select-cantidad'
                 value={cantidad}
                 onChange= {(e)=> setCantidad(Number(e.target.value))}>
               <option value="1">1</option>

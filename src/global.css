@@ -149,20 +149,13 @@ a {
 
 .caluga-producto {
   width: 220px;
-  /* 1. Muestra la tarjeta con alto adaptable al contenido */
   height: auto;
-
-  /* 2. Aplica Flexbox para ordenar todo verticalmente */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-
-  /* 3. Espaciado interno para que nada toque los bordes */
   padding: 20px;
-  gap: 12px; /* Controla la distancia entre imagen, texto y botón */
-
-  /* 4. Mantiene el fondo blanco y las esquinas que se observan en la imagen */
+  gap: 12px;
   background-color: #ffffff;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
@@ -243,7 +236,7 @@ a {
 .header a:hover,
 .nav-link:hover {
   text-decoration: none;
-  color: #c97387; /* O el color rosado/principal que uses */
+  color: #c97387;
 }
 
 .header-container {
@@ -281,6 +274,18 @@ a {
   font-size: 1.9rem;
 }
 
+.bi.bi-bag:hover {
+  color: #c97387;
+  transform: scale(1.09);
+  cursor: pointer;
+}
+
+.bi.bi-person:hover {
+  color: #c97387;
+  transform: scale(1.09);
+  cursor: pointer;
+}
+
 .icono {
   display: flex;
   flex-direction: row;
@@ -290,12 +295,7 @@ a {
     transform 0.2s ease,
     color 0.2s ease;
   border-color: white;
-}
-
-.icono:hover {
-  color: #c97387;
-  transform: scale(1.09);
-  cursor: pointer;
+  padding-bottom: 10px;
 }
 
 .categoriaGrid-section,
@@ -546,11 +546,11 @@ a {
   background-attachment: fixed;
 }
 .shop-product-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-  gap: 20px;
-  justify-content: center;
-  justify-items: center;
+  display: grid !important;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 200px)) !important;
+  gap: 70px !important;
+  justify-content: center !important;
+  justify-items: center !important;
 }
 
 .shop-main-title {
