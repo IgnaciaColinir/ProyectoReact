@@ -1,6 +1,7 @@
 .contact-page {
+  background-color: white;
   .container {
-    width: 80%;
+    width: 100%;
     margin: auto;
 
     p {
@@ -38,7 +39,8 @@
   }
 
   .desc p {
-    color: rgb(46, 41, 41);
+    color: rgb(84, 62, 62);
+    font-weight: 400;
   }
 
   .contact-info {
