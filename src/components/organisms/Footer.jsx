@@ -9,29 +9,29 @@ export const Footer = () => {
           <div className="feature-item">
             <i className="bi bi-truck"></i>
             <div className="feature-info">
-              <h4>FREE SHIPPING</h4>
-              <p>On orders over $999</p>
+              <h4>ENVÍO GRATIS</h4>
+              <p>En pedidos superiores a $10990</p>
             </div>
           </div>
           <div className="feature-item">
             <i className="bi bi-arrow-repeat"></i>
             <div className="feature-info">
-              <h4>EASY RETURN</h4>
-              <p>15 days return policy</p>
+              <h4>DEVOLUCIÓN FÁCIL</h4>
+              <p>Política de devoluciones de 15 días</p>
             </div>
           </div>
           <div className="feature-item">
             <i className="bi bi-shield-lock"></i>
             <div className="feature-info">
-              <h4>SECURE PAYMENT</h4>
-              <p>100% secure checkout</p>
+              <h4>PAGO SEGURO</h4>
+              <p>Proceso de pago 100 % seguro</p>
             </div>
           </div>
           <div className="feature-item">
             <i className="bi bi-headset"></i>
             <div className="feature-info">
-              <h4>24/7 SUPPORT</h4>
-              <p>We here to help</p>
+              <h4>SOPORTE 24/7</h4>
+              <p>Estamos aquí para ayudar.</p>
             </div>
           </div>
         </div>
@@ -43,10 +43,10 @@ export const Footer = () => {
             <div className="brand-logo" style={{ marginBottom: '16px' }}>
               <span className="brand-title" style={{ color: '#fff' }}>VELVETIQUE</span>
             </div>
-            <p style={{ fontSize: '13px', opacity: 0.8 }}>Thoughtful beauty for every skin, every day.</p>
+            <p style={{ fontSize: '13px', opacity: 0.8 }}>Belleza concebida con esmero para todo tipo de piel, cada día..</p>
           </div>
           <div className="footer-col">
-            <h4>QUICK LINKS</h4>
+            <h4>ENLACES RÁPIDOS</h4>
             <ul>
               <li><a href="#">Home</a></li>
               <li><a href="#">Shop</a></li>
@@ -54,19 +54,19 @@ export const Footer = () => {
             </ul>
           </div>
           <div className="footer-col">
-            <h4>CUSTOMER CARE</h4>
+            <h4>ATENCIÓN AL CLIENTE</h4>
             <ul>
-              <li><a href="#">Track Your Order</a></li>
-              <li><a href="#">Shipping policy</a></li>
-              <li><a href="#">Return & Refund</a></li>
+              <li><a href="#">Rastrea tu pedido</a></li>
+              <li><a href="#">Política de envíos</a></li>
+              <li><a href="#">Devoluciones y reembolsos</a></li>
             </ul>
           </div>
           <div className="footer-col">
-            <h4>NEWSLETTER</h4>
-            <p style={{ fontSize: '12px', opacity: 0.8, marginBottom: '8px' }}>Subscribe to get special offers.</p>
+            <h4>HOJA INFORMATIVA</h4>
+            <p style={{ fontSize: '12px', opacity: 0.8, marginBottom: '8px' }}>Suscríbete para recibir ofertas especiales.</p>
             <div className="newsletter-form">
               <input type="email" placeholder="Enter your email" className="input-text" />
-              <Button variant="primary">Subscribe</Button>
+              <Button variant="primary">Subscribete</Button>
             </div>
           </div>
         </div>

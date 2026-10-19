@@ -27,31 +27,31 @@ export const HomeTemplate = ({ productos, categorias }) => {
       <div className="features-banner">
         <div className="features-container">
           <div className="feature-item">
-            <span className="feature-icon">🌿</span>
+            <i className="bi bi-flower2"></i>
             <div className="feature-info">
-              <h4>Clean Ingredients</h4>
-              <p>Safe and toxic-free</p>
+              <h4>Ingredientes limpios</h4>
+              <p>Seguros y libres de toxinas</p>
             </div>
           </div>
           <div className="feature-item">
-            <span className="feature-icon">🛡️</span>
+            <i className="bi bi-shield-check"></i>
             <div className="feature-info">
-              <h4>Clinically Proven</h4>
-              <p>Dermatologically tested</p>
+              <h4>Clínicamente probado</h4>
+              <p>Dermatológicamente probado</p>
             </div>
           </div>
           <div className="feature-item">
-            <span className="feature-icon">🐰</span>
+            <i className="bi bi-heart"></i>
             <div className="feature-info">
-              <h4>Cruelty Free</h4>
-              <p>We never test on animals</p>
+              <h4>Libre de crueldad</h4>
+              <p>Nosotros nunca probamos en animales</p>
             </div>
           </div>
           <div className="feature-item">
-            <span className="feature-icon">🌍</span>
+            <i className="bi bi-globe"></i>
             <div className="feature-info">
-              <h4>Sustainable Beauty</h4>
-              <p>Good for you & the planet</p>
+              <h4>Belleza sostenible</h4>
+              <p>Bueno para ti & el planeta</p>
             </div>
           </div>
         </div>
@@ -64,10 +64,10 @@ export const HomeTemplate = ({ productos, categorias }) => {
       <section className="promo-section">
         <div className="promo-card">
           <div className="promo-content">
-            <span className="promo-tag">LIMITED TIME OFFER</span>
-            <h2 className="promo-title">Up to 30% Off<br />on Best Sellers</h2>
-            <p className="promo-desc">Glow more, spend less.<br />Treat your skin today!</p>
-            <Button variant="secondary">SHOP THE SALE</Button>
+            <span className="promo-tag">OFERTA POR TIEMPO LIMITADO</span>
+            <h2 className="promo-title">Hasta un 30% de descuento<br />en los más vendidos</h2>
+            <p className="promo-desc">Brilla más, gasta menos.<br />Mima tu piel hoy!</p>
+            <Button variant="secondary">SHOP NOW</Button>
           </div>
           <div className="promo-image">
             <img src={AnuncioImg} alt="Promo products" />

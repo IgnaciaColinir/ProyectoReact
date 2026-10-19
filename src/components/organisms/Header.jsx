@@ -39,9 +39,12 @@ export const Header = () => {
           <a href="#">
             <i className="bi bi-person"></i>
           </a>
-          <a href="#" className="icono">
-            <i className="bi bi-bag"></i>
-          </a>
+          <li>
+            <Link to="/carrito" className="icono">
+              <i className="bi bi-bag"></i>
+            </Link>
+          </li>
+          
         </div>
       </div>
     </header>

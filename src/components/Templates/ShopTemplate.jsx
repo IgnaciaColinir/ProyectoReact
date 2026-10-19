@@ -44,7 +44,9 @@ export const ShopTemplate = ({ todosLosProductos = [] }) => {
                 {categoriaProductos.map((producto) => (
                   <ProductCard 
                     key={producto.id} 
+                    id= {producto.id}
                     image={producto.image}
+                    imagenes={producto.imagenes}
                     titulo={producto.titulo}
                     marca={producto.marca || "VELVETIQUE"}
                     precio={producto.precio}
